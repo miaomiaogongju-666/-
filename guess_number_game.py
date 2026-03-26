@@ -6,7 +6,7 @@ print("请在1到100以内猜出正确的整数")
 while True:
     guess=int(input("猜猜我是谁"))
     if guess not in range(1,100):
-        printf("你这家伙，给我输入100以内的整数啊喂！我是不会给别人卡bug的机会的！")
+        print("你这家伙，给我输入100以内的整数啊喂！我是不会给别人卡bug的机会的！")
     if guess>secret:
         sentence=random.choice(sentences)
         print("大了",sentence )

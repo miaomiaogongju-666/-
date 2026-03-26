@@ -18,9 +18,8 @@ while True:
     wb.save("recored_data.xlsx")
     i+=1
     if temp>=Warning_tem:
-        print("⚠️警告！温度过高！")
+        print(f"温度:{temp},湿度：{humidity}\n⚠️警告！温度过高！")
     if humidity>=Warning_humidity:
-        print("⚠️警告！湿度过高！")
+        print(f"温度:{temp},湿度：{humidity}\n⚠️警告！湿度过高！")
     time.sleep(1)
-    if i==50:
-        break
+   
